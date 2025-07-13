@@ -1,0 +1,99 @@
+/* General Page Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #96faff;
+  background: radial-gradient(circle, rgba(150, 250, 255, 1) 0%, rgba(2, 109, 163, 1) 28%, rgba(37, 77, 122, 1) 53%, rgba(11, 18, 92, 1) 94%);
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* Card Layout */
+.card-container {
+  display: flex;
+  justify-content: center;   /* Center cards horizontally */
+  align-items: center;       /* Optional: center vertically if needed */
+  flex-wrap: wrap;           /* Wrap to next line if too many cards */
+  gap: 64px;
+  max-width: 1000px;         /* Optional: limit total width */
+  margin: 0 auto;            /* Center container itself */
+}
+
+
+/* Card Styling */
+.card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.548);
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  width: 250px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  overflow: visible; /* allows zoomed image to overflow */
+}
+
+/* Image Wrapper */
+.img-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* Image Styling */
+.img-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+/* Zoom Effect */
+.card:hover .img-wrapper img {
+  transform: scale(1.5);
+  z-index: 10;
+  /* box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); */
+}
+
+/* Card Content */
+.card h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 10px 40px;
+  border: none;
+  background-color: #32549c;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  font-size: 15px;
+}
+.card button:hover{
+    background-color: #28437e;
+
+}
+.card .info {
+  display: flex;
+  margin-top: 10px;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.4;
+  position: relative;
+  z-index: 2;
+  text-align: left;
+}

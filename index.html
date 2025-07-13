@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dinosaur Cards</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Dinosaur Cards</h1>
+  <div class="card-container">
+    <div class="card">
+      <div class="img-wrapper">
+        <img src="Tyrannosaurus.png" alt="Tyrannosaurus" />
+      </div>
+      <h2>Tyrannosaurus</h2>
+
+      <p class="info">T-Rex was a large carnivorous dinosaur that lived during the late Cretaceous period.</p>
+      <button>More Info</button>
+    </div>
+
+    <div class="card">
+      <div class="img-wrapper">
+        <img src="Triceratops.png" alt="Triceratops" />
+      </div>
+      <br>
+      <br>
+      <h2>Triceratops</h2>
+      
+      <p class="info">Triceratops is a genus of chasmosauri ceratopsian dinosaur that lived during the late .</p>
+      <button>More Info</button>
+    </div>
+
+    <div class="card">
+      <div class="img-wrapper">
+        <img src="Brachiosaurus.png" alt="Brachiosaurus" />
+      </div>
+      <br>
+      <br>
+      <h2>Brachiosaurus</h2>
+      <p class="info">Brachiosaurus was a long-necked herbivore that lived in the Late Jurassic period.</p>
+      <button>More Info</button>
+    </div>
+  </div>
+      <script  src="vanilla-tilt.js"></script>
+
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare:true,
+            "max-glare":1
+        });
+        
+        //It also supports NodeList
+    </script>
+
+</body>
+</html>
