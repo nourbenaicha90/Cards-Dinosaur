@@ -17,8 +17,6 @@ CSS3 – Custom styles, flexbox/grid layout, and hover animations.
 
 Vanilla JavaScript – DOM manipulation and interactivity without relying on libraries.
 
-🎯 Purpose:
-Ideal for learning front-end fundamentals, improving UI/UX skills, and demonstrating proficiency in building dynamic and visually appealing components using pure web technologies.
 
 
 https://github.com/user-attachments/assets/e490b6cf-bd71-4cd4-8c29-59aeca1fdac3
